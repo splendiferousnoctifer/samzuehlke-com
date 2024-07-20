@@ -1,35 +1,90 @@
 @import './base.css';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+/* General Styles */
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif; /* Override base font-family */
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Vertical layout */
 }
 
-a,
-.green {
+/* Main Container */
+.cv-page {
+  display: flex;
+  flex-direction: column; /* Stack components vertically */
+  align-items: center;
+  width: 100%;
+  min-height: 100vh; /* Ensure it covers the full height */
+  padding-top: 60px; /* Add padding to account for menu height */
+}
+
+
+
+/* Intro Section */
+.intro-section {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 equally spaced columns */
+  grid-template-rows: auto; /* Single row */
+  gap: 20px; /* Space between items */
+  width: 60vw; /* Same width as the menu bar */
+  padding: 0 20px; /* Padding inside the section */
+}
+
+.intro {
+  grid-column: 2 / span 4; /* Start at column 2, span 4 columns */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align the name to the left */
+}
+
+.intro h1 {
+  font-size: 6rem; /* Large font size for the name */
+  font-weight: bold;
+  color: black; /* Set text color to black */
+  margin: 0; /* Remove default margin */
+}
+
+.scroll-down {
+  grid-column: 6; /* Align to column 6 */
+  display: flex;
+  align-items: flex-end; /* Align to the bottom */
+  justify-content: flex-end; /* Align to the right */
+  padding-right: 0.5rem; /* Padding from the right */
+  padding-bottom: 0.5rem; /* Padding from the bottom */
+}
+
+.scroll-down a {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+  color: var(--color-text);
+  font-weight: 500;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.scroll-down a:hover {
+  text-decoration: underline;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+/* Main Content */
+.main-content {
+  width: 60vw; /* 60% of the viewport width */
+  padding: 20px; /* Adjust padding if needed */
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.content-section {
+  margin-bottom: 40px; /* Space between sections */
+}
+
+h1, h2 {
+  margin-top: 0;
 }
