@@ -6,6 +6,7 @@
     <ImageSection />
     <AboutMeSection />
     <Resume />
+    <Education />
     <MainContent />
   </div>
 </template>
@@ -16,6 +17,7 @@ import IntroSection from './components/IntroSection.vue';
 import ImageSection from './components/ImageSection.vue';
 import AboutMeSection from './components/AboutMeSection.vue'; 
 import Resume from './components/ResumeSection.vue';
+import Education from './components/EducationSection.vue';
 import MainContent from './components/MainContent.vue';
 
 export default {
@@ -26,6 +28,7 @@ export default {
     ImageSection,
     AboutMeSection, 
     Resume,
+    Education,
     MainContent
   }
 }

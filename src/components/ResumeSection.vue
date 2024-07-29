@@ -55,9 +55,11 @@
         </tbody>
       </table>
     </div>
-    <div class="resume-actions">
-      <a href="/path-to-resume.pdf" class="resume-button">Download Resume PDF</a>
-    </div>
+    <!--
+      <div class="resume-actions">
+        <a href="/path-to-resume.pdf" class="resume-button">Download Resume PDF</a>
+      </div>
+      -->
   </div>
 </template>
 
