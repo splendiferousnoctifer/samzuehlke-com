@@ -5,6 +5,7 @@
     <IntroSection />
     <ImageSection />
     <AboutMeSection />
+    <PublicationSection />
     <Resume />
     <Education />
     <MainContent />
@@ -19,6 +20,7 @@ import AboutMeSection from './components/AboutMeSection.vue';
 import Resume from './components/ResumeSection.vue';
 import Education from './components/EducationSection.vue';
 import MainContent from './components/MainContent.vue';
+import PublicationSection from './components/GallerySection.vue';
 
 export default {
   name: 'App',
@@ -27,6 +29,7 @@ export default {
     IntroSection,
     ImageSection,
     AboutMeSection, 
+    PublicationSection,
     Resume,
     Education,
     MainContent

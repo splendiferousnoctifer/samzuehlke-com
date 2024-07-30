@@ -1,9 +1,9 @@
 <!-- src/components/AboutMeSection.vue -->
 <template>
-    <div class="about-me-section">
+    <div class="about-me-section" id="about">
       <div class="content">
         <div class="heading">
-          <h2 id="about">(About Me)</h2>
+          <h2 >(About Me)</h2>
         </div>
         <div class="text">
             <p>

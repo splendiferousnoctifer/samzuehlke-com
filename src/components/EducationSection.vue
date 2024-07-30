@@ -1,7 +1,7 @@
 <template>
   <div class="education-section">
     <div class="heading">
-      <h1 id="education">Education</h1>
+      <h1>Education</h1>
     </div>
     <div class="education-content">
       <table class="education-table">
@@ -24,7 +24,7 @@
           <tr>
             <td class="education-details">
               <div class="timeframe">October 2018 – July 2021</div>
-              <div class="job-position">Mediatechnology and -design</div>
+              <div class="job-position">Mediatechnology <br> and -design</div>
               <div class="employer">FH Hagenberg</div>
             </td>
             <td class="education-description">
@@ -39,6 +39,9 @@
     <div class="education-actions">
       <a href="/path-to-education.pdf" class="education-button">Download resume PDF</a>
     </div>
+
+    <hr class="section-divider" />
+
   </div>
 </template>
 
@@ -70,6 +73,7 @@ h1 {
 
 .education-content {
   padding: 20px 0;
+  padding-right: 20px;
 }
 
 .education-table {
@@ -155,5 +159,14 @@ h1 {
 .education-button:hover {
   background-color: black; /* Maintain background color on hover */
   color: white; /* Maintain text color on hover */
+}
+
+  /* Horizontal line styling */
+  .section-divider {
+  border: none; /* Remove default border */
+  border-top: 2px solid black; /* Black line with a thickness of 2px */
+  margin: 40px 0; /* Space above and below the line */
+  margin-left: 20px;
+  width: 60wv; /* Full width of the container */
 }
 </style>

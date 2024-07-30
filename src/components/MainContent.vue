@@ -1,20 +1,7 @@
 <!-- src/components/MainContent.vue -->
 <template>
     <main class="main-content">
-      <section id="home" class="content-section">
-        <h2>Welcome to My CV</h2>
-        <p>This is the home section.</p>
-      </section>
-  
-      <section id="about" class="content-section">
-        <h2>About Me</h2>
-        <p>This is the about section.</p>
-      </section>
-  
-      <section id="publications" class="content-section">
-        <h2>Publications</h2>
-        <p>This is the publications section.</p>
-      </section>
+      
   
       <section id="contact" class="content-section">
         <h2>Contact</h2>

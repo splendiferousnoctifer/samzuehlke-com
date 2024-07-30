@@ -1,7 +1,7 @@
 <template>
-  <div class="resume-section">
+  <div class="resume-section" id="cv">
     <div class="heading">
-      <h1 id="resume">Résumé</h1>
+      <h1 >Résumé</h1>
     </div>
     <div class="resume-content">
       <table class="resume-table">
@@ -54,7 +54,10 @@
           </tr>
         </tbody>
       </table>
+      
+      
     </div>
+    <hr class="section-divider" />
     <!--
       <div class="resume-actions">
         <a href="/path-to-resume.pdf" class="resume-button">Download Resume PDF</a>
@@ -73,7 +76,7 @@ export default {
 .resume-section {
   width: 60vw; /* Same width as the other components */
   margin: 0 auto; /* Center the component horizontally */
-  padding-right: 20px; /* Padding on the right */
+  padding-right: 20px;
   box-sizing: border-box; /* Include padding in the element's total width */
 }
 
@@ -91,6 +94,7 @@ h1 {
 
 .resume-content {
   padding: 20px 0;
+  padding-right: 20px;
 }
 
 .resume-table {
@@ -176,5 +180,14 @@ h1 {
 .resume-button:hover {
   background-color: black; /* Maintain background color on hover */
   color: white; /* Maintain text color on hover */
+}
+
+  /* Horizontal line styling */
+  .section-divider {
+  border: none; /* Remove default border */
+  border-top: 2px solid black; /* Black line with a thickness of 2px */
+  margin-bottom: 40px;
+  margin-left: 20px;
+  width: 60wv; /* Full width of the container */
 }
 </style>
