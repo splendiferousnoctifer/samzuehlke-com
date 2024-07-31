@@ -88,3 +88,8 @@ body {
 h1, h2 {
   margin-top: 0;
 }
+
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling behavior for anchor links */
+}

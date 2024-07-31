@@ -1,26 +1,27 @@
 <template>
     <div class="gallery-section">
         <div class="heading">
-            <h1 id="publications">Publications</h1>
+            <h1>Publications</h1>
         </div>
-      <div class="gallery-container">
-        <div class="gallery-box" @click="navigateTo('https://example.com/link1')">
-          <div class="date">July 2023</div>
-          <img src="/test.jpg" alt="Image 1" class="image"/>
-          <div class="title">Title 1</div>
-          <div class="authors">Author 1, Author 2</div>
+      <div id="publications" class="gallery-container">
+        <div class="gallery-box" @click="navigateTo('https://doi.org/10.1145/3641234.3671083')">
+          <div class="date">July 2024 - SIGGRAPH24</div>
+          <img src="https://dl.acm.org/cms/attachment/html/10.1145/3641234.3671083/assets/html/images/siggraphposters24-66-fig1.jpg" alt="Image 1" class="image"/>
+          <div class="title">TexEdge: Towards an Approach for Optimization of Sensor Layouts in Textile Interfaces</div>
+          <div class="authors">Samuel Zühlke; Sara Mlakar; Kathrin Probst; David C. Schedl</div>
         </div>
-        <div class="gallery-box" @click="navigateTo('https://example.com/link2')">
-          <div class="date">August 2023</div>
-          <img src="/test.jpg" alt="Image 2" class="image"/>
-          <div class="title">Title 2</div>
-          <div class="authors">Author 3, Author 4</div>
+        <div class="gallery-box" @click="navigateTo('https://doi.org/10.1145/3643834.3661531')">
+          <div class="date">July 2024 - DIS24</div>
+          <img src="https://dl.acm.org/cms/attachment/html/10.1145/3643834.3661531/assets/html/images/dis24-119-fig1.jpg" alt="Image 2" class="image"/>
+          <div class="title">Threads of Traceability: Textile IDs in the Fabric of Sustainable Fashion
+          </div>
+          <div class="authors"> Mira Alida Haberfellner*; Samuel Zühlke*; Leopold Boess; Kathrin Probst; Michael Haller</div>
         </div>
-        <div class="gallery-box" @click="navigateTo('https://example.com/link3')">
-          <div class="date">September 2023</div>
-          <img src="/test.jpg" alt="Image 3" class="image"/>
-          <div class="title">Title 3</div>
-          <div class="authors">Author 5, Author 6</div>
+        <div class="gallery-box" @click="navigateTo('https://doi.org/10.54941/ahfe1004144')">
+          <div class="date">September 2023 - IHSED23</div>
+          <img src="https://www.researchgate.net/profile/Samuel-Zuehlke/publication/372462589/figure/fig1/AS:11431281218979264@1705862073340/Comparison-of-the-mathematical-model-to-real-world-measurements-The-RMS-of-the.ppm" alt="Image 3" class="image"/>
+          <div class="title">Touch Sensing on Semi-Elastic Textiles with Border-Based Sensors</div>
+          <div class="authors">Samuel Zühlke; Andreas Stöckl; David Schedl</div>
         </div>
       </div>
       <hr class="section-divider" />
@@ -32,8 +33,15 @@
   export default {
     name: 'GallerySection',
     methods: {
+      /**
+       * Navigate to the specified URL in new tab
+       * @param url The URL to navigate to
+       */
       navigateTo(url: string) {
-        window.location.href = url;
+        const newWindow = window.open(url, '_blank');
+        if (newWindow) {
+          newWindow.focus();
+        }
       }
     }
   }
@@ -91,15 +99,15 @@
 
   .heading {
     margin-bottom: 20px;
-    }
+  }
 
-    h1 {
+  h1 {
     font-size: 3rem; /* Larger font size for the heading */
     font-weight: bold;
     color: black; /* Set text color to black */
     margin: 0; /* Remove default margin */
     line-height: 1.1; /* Reduce line spacing */
-    }
+  }
 
     .section-divider {
   border: none; /* Remove default border */

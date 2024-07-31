@@ -3,7 +3,7 @@
     <div class="about-me-section" id="about">
       <div class="content">
         <div class="heading">
-          <h2 >(About Me)</h2>
+          <h2 >About Me</h2>
         </div>
         <div class="text">
             <p>
@@ -42,7 +42,8 @@
   }
   
   h2 {
-    font-size: 1.25rem; /* Font size for the heading */
+    font-size:3rem; /* Font size for the heading */
+    font-weight: bold;
     color: black; /* Set text color to black */
     margin: 0; /* Remove default margin */
   }
